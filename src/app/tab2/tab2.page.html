@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>          
+          <ion-title>
+          <img src="/assets/img/favi.png" width="40px" style="display:inline-block" height="35px"/>
+         <font color="#ffffff">  APOSTILAS CURSO</font>
+        </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let apostila of apostilas">
+      <ion-item href="http://www.professoramireilecosta.com.br/crud_pdo/arquivos/{{apostila.link}}">
+        <ion-icon slot="start" color="medium" name="download"></ion-icon>
+        <ion-label>{{apostila.nome}}</ion-label>
+      </ion-item>
+  </ion-list>
+    
+</ion-content>

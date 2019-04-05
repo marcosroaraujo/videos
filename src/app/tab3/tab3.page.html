@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar>    
+          <ion-title>
+          <img src="/assets/img/favi.png" width="40px" style="display:inline-block" height="35px"/>
+         <font color="#ffffff">  VÍDEOS CURSO</font>
+        </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let video of videos">
+		<ion-card-header>
+			<ion-card-title>{{video.nome}}</ion-card-title>
+		</ion-card-header>
+		
+		<ion-card-content>
+			<iframe class="tamanho-video"  [src]="video.link" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

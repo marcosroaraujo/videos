@@ -1,0 +1,14 @@
+{
+  "name": "video2",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "proxies": [
+    {
+      "path": "/crud_pdo",
+      "proxyUrl": "http://www.professoramireilecosta.com.br"
+    }
+  ],
+  "type": "angular"
+}

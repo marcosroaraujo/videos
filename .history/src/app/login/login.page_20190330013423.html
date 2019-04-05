@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form" (ngSubmit)="fazLogin()">
+  <ion-item>
+    <ion-label position="floating" formControlName="email" ngDefaultControl>Email</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" formControlName="senha" ngDefaultControl>Senha</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-button>
+    Entrar
+  </ion-button>
+</form>
+</ion-content>

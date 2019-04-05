@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+  <ion-item>
+    <ion-label position="floating" formControlName="email">Email</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" formControlName="senha">Senha</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+</form>
+  <ion-button (click)="fazLogin()">
+    Entrar
+  </ion-button>
+</ion-content>

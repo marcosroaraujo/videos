@@ -3,6 +3,15 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  /** mireile **/
+  --ion-color-mireile: #F34396;
+  --ion-color-mireile-rgb: 243,67,150;
+  --ion-color-mireile-contrast: #000000;
+  --ion-color-mireile-contrast-rgb: 0,0,0;
+  --ion-color-mireile-shade: #d63b84;
+  --ion-color-mireile-tint: #f456a1;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -26,6 +35,7 @@
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
   --ion-color-tertiary-shade: #633ce0;
   --ion-color-tertiary-tint: #7e57ff;
+  --ion-color-tertiary-redacao: #F34396;
 
   /** success **/
   --ion-color-success: #10dc60;
@@ -74,4 +84,9 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
 }
+
+
+
+
