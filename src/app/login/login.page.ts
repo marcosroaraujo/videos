@@ -36,6 +36,7 @@ export class LoginPage implements OnInit {
           return;
         }
         this.nome = user.displayName;
+        localStorage.setItem('nome', user.displayName);
         this.email = user.email;
       });
     }
@@ -73,7 +74,6 @@ export class LoginPage implements OnInit {
         return firebase.auth().signInAndRetrieveDataWithCredential(facebookCredential)
         .then(user => {
           this.loading.dismiss();
-          localStorage.setItem('nome', user.displayName);
           this.checaLogado();
           this.router.navigate(['/tabs/tab1']);
         });
@@ -84,7 +84,6 @@ export class LoginPage implements OnInit {
         .then(user => {
           this.checaLogado();
           this.loading.dismiss();
-          localStorage.setItem('nome', user.displayName);
           this.router.navigate(['/tabs/tab1']);
         });
     }
